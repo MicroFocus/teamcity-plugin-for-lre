@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.performancecenter.teamcity.plugin</groupId>
     <artifactId>com-performancecenter-teamcity-plugin</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
     <name>LoadRunner Enterprise CI</name>
     <description>This TeamCity plugin enables developers and performance experts to run LoadRunner Enterprise performance and load tests as part of CI/CD pipeline. Read more details about it on: </description>

@@ -4,13 +4,13 @@
   <parent>
     <artifactId>com-performancecenter-teamcity-plugin</artifactId>
     <groupId>com.performancecenter.teamcity.plugin</groupId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
   </parent>
   <artifactId>build</artifactId>
   <packaging>pom</packaging>
   <properties>
       <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
-      <teamcity.com-performancecenter-teamcity-plugin.plugin.version>1.0.4</teamcity.com-performancecenter-teamcity-plugin.plugin.version>
+      <teamcity.com-performancecenter-teamcity-plugin.plugin.version>1.0.5</teamcity.com-performancecenter-teamcity-plugin.plugin.version>
       <teamcity.com-performancecenter-teamcity-plugin.plugin.vendorName>OpenText</teamcity.com-performancecenter-teamcity-plugin.plugin.vendorName>
       <teamcity.com-performancecenter-teamcity-plugin.plugin.vendorUrl>https://www.microfocus.com/en-us/products/loadrunner-enterprise/overview</teamcity.com-performancecenter-teamcity-plugin.plugin.vendorUrl>
   </properties>
@@ -18,17 +18,17 @@
       <dependency>
            <groupId>com.performancecenter.teamcity.plugin</groupId>
            <artifactId>com-performancecenter-teamcity-plugin-agent</artifactId>
-           <version>1.0.4</version>
+           <version>1.0.5</version>
       </dependency>
       <dependency>
            <groupId>com.performancecenter.teamcity.plugin</groupId>
            <artifactId>com-performancecenter-teamcity-plugin-common</artifactId>
-           <version>1.0.4</version>
+           <version>1.0.5</version>
       </dependency>
       <dependency>
            <groupId>com.performancecenter.teamcity.plugin</groupId>
            <artifactId>com-performancecenter-teamcity-plugin-server</artifactId>
-           <version>1.0.4</version>
+           <version>1.0.5</version>
       </dependency>
   </dependencies>
   <build>

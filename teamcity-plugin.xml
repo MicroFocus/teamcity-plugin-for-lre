@@ -3,7 +3,7 @@
   <info>
     <name>com-performancecenter-teamcity-plugin</name>
     <display-name>LoadRunner Enterprise CI</display-name>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <description>Enables running LoadRunner Enterprise tests</description>
     <download-url>Plugin download URL</download-url>
     <vendor>
