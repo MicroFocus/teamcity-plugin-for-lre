@@ -6,7 +6,7 @@ package com.performancecenter.teamcity.plugin;
  */
 public class StringsConstants {
 
-    public static final String RUNNER_TYPE = "LoadRunner Enterprise Test";
+    public static final String RUNNER_TYPE = "OpenText Enterprise Performance Engineering Test";
 
     public static final String RunTypeName = "PerformanceCenterRunner";
     public static final String PCSERVER = "com.performancecenter.teamcity.plugin.PcServer";

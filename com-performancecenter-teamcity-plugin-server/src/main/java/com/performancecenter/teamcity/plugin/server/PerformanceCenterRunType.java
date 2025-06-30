@@ -37,13 +37,13 @@ public class PerformanceCenterRunType extends RunType {
     @NotNull
     @Override
     public String getDisplayName() {
-        return "LoadRunner Enterprise Test";
+        return "Performance Test";
     }
 
     @NotNull
     @Override
     public String getDescription() {
-        return "Executing LoadRunner Enterprise load test.";
+        return "Executing load test.";
     }
 
     @Nullable
@@ -56,7 +56,7 @@ public class PerformanceCenterRunType extends RunType {
                 List<InvalidProperty> errors = new ArrayList<InvalidProperty>();
 
                 if (StringUtil.isEmpty(map.get(StringsConstants.PCSERVER))) {
-                    errors.add(new InvalidProperty(StringsConstants.PCSERVER, "PC Server cannot be empty"));
+                    errors.add(new InvalidProperty(StringsConstants.PCSERVER, "Server cannot be empty"));
                 }
                 if (StringUtil.isEmpty(map.get(StringsConstants.USERNAME))) {
                     errors.add(new InvalidProperty(StringsConstants.USERNAME, "User Name cannot be empty"));
@@ -65,7 +65,7 @@ public class PerformanceCenterRunType extends RunType {
                     errors.add(new InvalidProperty(StringsConstants.DOMAIN, "Domain cannot be empty"));
                 }
                 if (StringUtil.isEmpty(map.get(StringsConstants.PCPROJECT))) {
-                    errors.add(new InvalidProperty(StringsConstants.PCPROJECT, "PC Project cannot be empty"));
+                    errors.add(new InvalidProperty(StringsConstants.PCPROJECT, "Project cannot be empty"));
                 }
                 if (StringUtil.isEmpty(map.get(StringsConstants.TESTID))) {
                     errors.add(new InvalidProperty(StringsConstants.TESTID, "Test ID cannot be empty"));
