@@ -130,7 +130,7 @@
         <th>
             <label>PC Server <bs:helpIcon iconTitle="
 Enter the hostname or IP address of a PC server.<br>
-Example: If the LoadRunner Enterprise server URL is http://MY_SERVER:PORT/loadtest, enter MY_SERVER:PORT."/></label>
+Example: If the server URL is http://MY_SERVER:PORT/loadtest, enter MY_SERVER:PORT."/></label>
         </th>
         <td><props:textProperty name="${constants.pcserver}"/>
             <span class="error" id="error_${constants.pcserver}"></span>
@@ -144,18 +144,18 @@ Example: If the LoadRunner Enterprise server URL is http://MY_SERVER:PORT/loadte
         <td colspan="4">
             <props:checkboxProperty name="${constants.isAuthenticateWithToken}"/>Use Token For
             Authentication<bs:helpIcon iconTitle="
-Depending on the authentication type required by your LoadRunner Enterprise server, credentials can be a username and password, or an API key for SSO or LDAP authentication.
+Depending on the authentication type required by your server, credentials can be a username and password, or an API key for SSO or LDAP authentication.
 <ul>
 <li>Username and password:
 <ul>
-<li>User name. Enter the user name required to connect to the LoadRunner Enterprise server.</li>
-<li>Password. Enter the password required to connect to the LoadRunner Enterprise server.</li>
+<li>User name. Enter the user name required to connect to the server.</li>
+<li>Password. Enter the password required to connect to the server.</li>
 </ul>
 </li>
-<li>SSO or LDAP authentication (LoadRunner Enterprise 2021 R1 and later)
+<li>SSO or LDAP authentication.
 <ul>
 <li>Select Authenticate with token.</li>
-<li>Enter the Client ID and Secret key obtained from your LoadRunner Enterprise site administrator in the Id Key and Secret key fields.</li>
+<li>Respectively enter the Client ID and Secret key obtained from the site administration in the Id Key and Secret key fields.</li>
 </ul>
 </li>
 </ul>
@@ -166,7 +166,7 @@ Depending on the authentication type required by your LoadRunner Enterprise serv
         <th>
             <label>User Name / Client ID</label>
             <bs:helpIcon
-                    iconTitle="LoadRunner Enterprise User (username) or access Token's Credentials (ClientIdKey)."/>
+                    iconTitle="User (username) or access Token's Credentials (ClientIdKey)."/>
         </th>
 
         <td><props:textProperty name="${constants.username}"/>
@@ -178,7 +178,7 @@ Depending on the authentication type required by your LoadRunner Enterprise serv
         <th>
             <label>Password / Secret key</label>
             <bs:helpIcon
-                    iconTitle="LoadRunner Enterprise User (password) or Token's Credentials ( or ClientSecretKey)."/>
+                    iconTitle="User's password or Token's Credentials (ClientSecretKey)."/>
         </th>
         <td><props:passwordProperty name="${constants.password}"/></td>
     </tr>
@@ -335,7 +335,7 @@ Depending on the authentication type required by your LoadRunner Enterprise serv
     <tr>
         <td colspan="4">
             <props:checkboxProperty name="${constants.isvuds}"/>Use VUDs <bs:helpIcon iconTitle="
-A Virtual User Day (VUD) license provides you with a specified number of Vusers (VUDs) that you can run an unlimited number of times within a 24 hour period. Before using this option, make sure that VUDs licenses are applied in your LoadRunner Enterprise environment."/>
+A Virtual User Day (VUD) license provides you with a specified number of Vusers (VUDs) that you can run an unlimited number of times within a 24 hour period. Before using this option, make sure that VUDs licenses are applied in your environment."/>
         </td>
     </tr>
 
@@ -392,8 +392,7 @@ Select this option to set the build step status according to a predefined SLA (S
         <th colspan="3">
             <c:url var="url"
                    value="https://admhelp.microfocus.com/pc/en/latest/online_help/Content/PC/Team-City-Plugin.htm"/>
-            <div>For more information on configuring these settings, see the <a href="${url}" target="_blank">LoadRunner
-                Enterprise and TeamCity</a> documentation.
+            <div>For more information on configuring these settings, see the <a href="${url}" target="_blank">OpenText Enterprise Performance Engineering and TeamCity</a> documentation.
             </div>
         </th>
     </tr>

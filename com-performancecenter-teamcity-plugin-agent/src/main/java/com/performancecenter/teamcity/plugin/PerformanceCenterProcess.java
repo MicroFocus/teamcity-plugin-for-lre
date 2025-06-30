@@ -184,7 +184,7 @@ public class PerformanceCenterProcess implements BuildProcess {
         try {
             if (params.get(StringsConstants.PASSWORD) != null)
                 pass = params.get(StringsConstants.PASSWORD).toString();
-            logger.message(String.format("Trying to login to LoadRunner Enterprise Server '%s://%s/LoadTest/%s' with %s '%s']", isHTTPSProtocol(), pcRestProxy.GetPcServer(), pcRestProxy.GetTenant(), isAuthenticateWithToken() ? "ID Key" : "user", params.get(StringsConstants.USERNAME).toString()));
+            logger.message(String.format("Trying to login to Server '%s://%s/LoadTest/%s' with %s '%s']", isHTTPSProtocol(), pcRestProxy.GetPcServer(), pcRestProxy.GetTenant(), isAuthenticateWithToken() ? "ID Key" : "user", params.get(StringsConstants.USERNAME).toString()));
             pcRestProxy.authenticate(params.get(StringsConstants.USERNAME).toString(), pass);
             return true;
         } catch (PcException e) {
@@ -308,7 +308,7 @@ public class PerformanceCenterProcess implements BuildProcess {
                         testInstanceID = pcRestProxy.createTestInstance(testID, testSetID);
                         logger.message(String.format("Test Instance with ID : %s has been created successfully.", testInstanceID));
                     } else {
-                        String msg = "No TestSetID available in project, please create a testset from LoadRunner Enterprise UI";
+                        String msg = "No TestSetID available in project, please create a testset from application UI";
                         logger.message(msg);
                         throw new PcException(msg);
                     }
@@ -335,7 +335,7 @@ public class PerformanceCenterProcess implements BuildProcess {
                 setTrendReportId(String.valueOf(pcTest.getTrendReportId()));
             else {
                 String msg = "No trend report ID is associated with the test.\n" +
-                        "Please turn Automatic Trending on for the test through LoadRunner Enterprise UI.\n" +
+                        "Please turn Automatic Trending on for the test through application's UI.\n" +
                         "Alternatively you can check 'Add run to trend report with ID' on configuration dialog.";
                 throw new PcException(msg);
             }
@@ -378,7 +378,7 @@ public class PerformanceCenterProcess implements BuildProcess {
                 counter++;
                 Thread.sleep(1000);
                 if (counter > 60) {
-                    logger.message(String.format("RunID: %s  - Stopped from LoadRunner Enterprise side with state = %s", runId, currentState.value()));
+                    logger.message(String.format("RunID: %s  - Stopped from server side with state = %s", runId, currentState.value()));
                     break;
                 }
             } else {
